@@ -1,0 +1,99 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  .login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .switch-buttons-container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .login-form > .switch-buttons-container > button {
+    flex: 1;
+    border-radius: 0;
+    padding: 15px 60px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.7;
+    border: 1px solid #ccc;
+  }
+  
+  .login-form button:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .login-form button:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .login-form button.active {
+    background-color: #139a43;
+    color: white;
+    font-weight: 700;
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .login-form button:hover {
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-form input {
+    display: block;
+    width: 100%;
+    padding: 20px 55px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .login-form a {
+    color: #139a43;
+    text-decoration: none;
+  }
+  
+  .login-form .forgot-password {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .login-form .submit-button {
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #139a43;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(90deg, #07bd46 50%, #139a43 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    margin-top: 20px;
+  }
+  
+  .login-form .submit-button:hover {
+    background-position: left bottom;
+  }

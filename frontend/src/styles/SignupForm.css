@@ -1,0 +1,196 @@
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  .signup-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .switch-buttons-container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .signup-form > .switch-buttons-container > button {
+    flex: 1;
+    border-radius: 0;
+    padding: 15px 60px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.7;
+    border: 1px solid #ccc;
+  }
+  
+  .signup-form button:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .signup-form button:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .signup-form button.active {
+    background-color: #139a43;
+    color: white;
+    font-weight: 700;
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .signup-form button:hover {
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .signup-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .select-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .select-wrapper::after {
+    content: "\25BE";
+    position: absolute;
+    top: 40%;
+    right: 30px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  
+  /* .signup-form select {
+    display: block;
+    width: 100%;
+    padding: 20px 70px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  } */
+  
+  .signup-form .custom-select {
+    display: block;
+    width: 100%;
+    padding: 20px 70px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .signup-form .custom-select__trigger {
+    width: 200px;
+    white-space: nowrap;
+  }
+  
+  .signup-form .custom-select__trigger span {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .signup-form .custom-select__trigger .fa-info-circle {
+    margin-right: 10px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    z-index: 1;
+  }
+  
+  .signup-form .custom-options {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+  }
+  
+  .signup-form .custom-options.show {
+    display: block;
+  }
+  
+  .signup-form .custom-option {
+    padding: 10px 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .signup-form .custom-option:hover {
+    background: #f2f2f2;
+  }
+  
+  .signup-form input {
+    display: block;
+    width: 100%;
+    padding: 20px 70px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* .signup-form input::placeholder {
+    font-size: 16px;
+  } */
+  
+  .signup-form a {
+    color: #139a43;
+    text-decoration: none;
+  }
+  
+  .signup-form .forgot-password {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .signup-form .submit-button {
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #139a43;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(90deg, #07bd46 50%, #139a43 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    margin-top: 20px;
+  }
+  
+  .signup-form .submit-button:hover {
+    background-position: left bottom;
+  }

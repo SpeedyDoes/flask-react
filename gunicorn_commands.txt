@@ -1,0 +1,9 @@
+app:         
+gunicorn wsgi:app -w 2 -b 127.0.0.1:8000 --worker-class sync -c guni_conf.py
+
+chat server: 
+gunicorn sugma:app -w 1 -b 127.0.0.1:8001 --worker-class gevent -c guni_conf.py
+
+together:
+
+gunicorn wsgi:app -w 2 -b 127.0.0.1:8000 --worker-class sync & gunicorn sugma:server -w 1 -b 127.0.0.1:8001 --worker-class eventlet
